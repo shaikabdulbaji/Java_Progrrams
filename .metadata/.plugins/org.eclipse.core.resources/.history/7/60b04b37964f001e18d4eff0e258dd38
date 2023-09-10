@@ -1,0 +1,15 @@
+package b21Convert_String_to_Integger;
+
+public class Sample {
+	
+	public static void main(String[] args) {
+		
+		String s1 = "9";
+		
+		int num = Integer.parseInt(s1);
+		
+		System.out.println(num);
+		
+	}
+
+}

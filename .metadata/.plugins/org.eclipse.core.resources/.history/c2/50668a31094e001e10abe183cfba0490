@@ -1,0 +1,16 @@
+package a4Scanner;
+
+import java.util.Scanner;
+
+public class Sample {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter first number : ");
+		
+		scan.nextInt();
+	}
+
+}

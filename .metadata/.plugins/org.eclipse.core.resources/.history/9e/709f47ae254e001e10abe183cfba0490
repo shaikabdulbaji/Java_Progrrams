@@ -1,0 +1,21 @@
+package b13Power_of_number;
+
+import java.util.Scanner;
+
+public class Sample {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter any number : ");
+		
+		int number = scan.nextInt();
+		
+		System.out.println("Power Number : ");
+		
+		int power = scan.nextInt();
+		
+	}
+
+}
