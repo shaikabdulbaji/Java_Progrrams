@@ -1,0 +1,39 @@
+package Assignment_1;
+
+import java.util.Scanner;
+
+public class a1_Given_number_is_even_or_odd {
+
+	public static void main(String[] args) {
+
+		/*
+		 * adana number even or odd ani chepali antea manam echina number adi ina divide by 2 chaiyali
+		   ala chestea reminder 0 vastea even ani ala 0 rakapotea odd ani cheptamu.
+		   
+		 * "System.in" --> "in" antea manam console nunchi input (or) inputstream tisukuntunam ani ardam. 
+		 * "System.out" --> "out" antea manam console lo output (or) outputstream rastunam ani ardam.
+		 */
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Please Enter the Number : ");
+		
+		int number = scanner.nextInt();
+		
+		//System.out.println(number); manam echina number console lo print aavutundo leado sample ga chudataniki
+		
+		System.out.println(number%2);
+		
+		if(number%2 == 0)
+		{
+			System.out.println("Given number is Even Number");
+		}else
+		{
+			System.out.println("Given number is Odd Number");
+		}
+		
+		scanner.close();
+		
+	}
+
+}

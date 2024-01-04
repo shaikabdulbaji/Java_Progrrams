@@ -1,0 +1,43 @@
+package Assignment_4;
+
+import java.util.Scanner;
+
+public class a6_Prime_number {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Please Enter the Number : ");		
+		int number = scanner.nextInt(); // e line manam number tisukotaniki
+		
+		boolean isPrime = true; // basiic ga manam prathi number prime number anukukotaniki e line
+		
+		if(number !=1 && number !=2) { // e line 1&2 kakunda inka adina check chaiyataniki
+			
+			int i = 2; // e line 2 dagara nunchi start chaiyataniki
+			
+			while(i<number) {
+				
+				if(number%i==0) {
+					
+					isPrime = false;
+					break;
+					
+				}
+				i++;
+			}
+			
+		}
+		else 
+			isPrime = false;
+		
+		if(isPrime)
+			System.out.println("Given number is Prime Number");
+		else
+			System.out.println("Given number is not a Prime Number");
+		
+		scanner.close();
+	}
+
+}

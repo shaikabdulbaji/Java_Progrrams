@@ -1,0 +1,19 @@
+package Assignment_6;
+
+import java.util.Scanner;
+
+public class a1_Print_the_sum_of_the_elements_of_a_multidimensional_array {
+
+	public static void main(String[] args) {
+
+		Scanner scanner= new Scanner(System.in);
+		
+		System.out.println("Please Enter no.of Rows : ");
+		int rowSize = scanner.nextInt();
+		
+		int[][] arr = new int[rowSize][];
+		
+		scanner.close();
+	}
+
+}

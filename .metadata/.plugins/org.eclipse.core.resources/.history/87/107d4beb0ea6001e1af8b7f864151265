@@ -1,0 +1,21 @@
+package Assignment_4;
+
+import java.util.Scanner;
+
+public class a6_Prime_numbers  {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Please Enter the Starting Number : ");		
+		int startingNumber = scanner.nextInt();
+		
+		System.out.println("Please Enter the Ending Number : ");		
+		int endingNumber = scanner.nextInt();
+		
+		
+		scanner.close();
+	}
+
+}

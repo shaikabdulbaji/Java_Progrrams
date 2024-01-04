@@ -1,0 +1,76 @@
+package Assignment_6;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class a2_Add_the_elements_of_two_arrays_and_print_the_output_array_in_the_console {
+
+	public static void main(String[] args) {
+
+		//edi values evataniki - Array1 lo
+		Scanner scanner= new Scanner(System.in);
+		
+		System.out.println("Please Enter no.of Rows in array1 : ");
+		int rowSize_arr1 = scanner.nextInt();
+		
+		int[][] arr1 = new int[rowSize_arr1][];
+		
+		for(int i=0; i<rowSize_arr1; i++)
+		{
+			System.out.println("Please Enter the Coloumn Size in Row Number : " +i);
+			int colSize = scanner.nextInt();
+			arr1[i] = new int[colSize];
+			
+			System.out.println("Please Enter the Coloumn Values for Row Number : " +i);
+			for(int j=0; j<colSize; j++)
+			{
+				arr1[i][j] = scanner.nextInt();
+			}
+		}
+		
+		//edi values evataniki - Array2 lo
+		System.out.println("Please Enter no.of Rows in array1 : ");
+		int rowSize_arr2 = scanner.nextInt();
+		
+		int[][] arr2 = new int[rowSize_arr2][];
+		
+		for(int i=0; i<rowSize_arr2; i++)
+		{
+			System.out.println("Please Enter the Coloumn Size in Row Number : " +i);
+			int colSize = scanner.nextInt();
+			arr2[i] = new int[colSize];
+			
+			System.out.println("Please Enter the Coloumn Values for Row Number : " +i);
+			for(int j=0; j<colSize; j++)
+			{
+				arr2[i][j] = scanner.nextInt();
+			}
+		}
+		
+		
+		
+		
+		
+		
+		System.out.println("Input : ");
+		for(int i=0; i<arr.length; i++)
+		{
+			System.out.println(Arrays.toString(arr[i]));
+		}
+		
+		//edi asal program values ani sum cheasi print chiyatam console lo
+		int sum = 0;
+		for(int i=0; i<arr.length; i++)
+		{
+			for(int j=0; j<arr[i].length; j++)
+			{
+				sum = sum + arr[i][j];
+			}
+		}
+		
+		System.out.println("Output is --> " +sum);
+		
+		scanner.close();
+	}
+
+}

@@ -1,0 +1,30 @@
+package Assignment_7;
+
+import java.util.Scanner;
+
+public class a9_find_the_count_of_uppercase_letters_lowercase_letters_digits_and_special_characters_in_a_given_string {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Please Enter the String : ");
+		
+		String input = scanner.nextLine();
+		
+		System.out.println("Input : " +input);
+		
+		String revString = "";
+		// (or) String revString = new String();
+	
+		for(int i=input.length() - 1;  i >= 0  ; i--)
+		{
+			revString = revString + input.charAt(i);
+		}
+		
+		System.out.println("Output : " +revString);
+		
+		scanner.close();
+	}
+
+}

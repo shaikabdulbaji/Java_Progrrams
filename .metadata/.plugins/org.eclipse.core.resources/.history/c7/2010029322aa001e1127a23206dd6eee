@@ -1,0 +1,36 @@
+package Assignment_7;
+
+import java.util.Scanner;
+
+public class b112_Compare_two_strings_if_the_characters_in_string1_are_present_in_string2_then_it_should_be_printed_as_such_in_output_else_should_be_printed_in_output {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Please Enter the First String : ");
+		String input1 = scanner.nextLine();		
+		System.out.println("Input1 : " +input1);
+		
+		System.out.println("Please Enter the Second String : ");
+		String input2 = scanner.nextLine();		
+		System.out.println("Input2 : " +input2);
+	
+		
+		String output = "";
+		for(int i=0; i<input1.length(); i++)
+		{
+			char tempChar = input1.toLowerCase().charAt(i);
+			if(input2.toLowerCase().indexOf(tempChar) >= 0)
+				output = output + input1.charAt(i);
+			else
+				output = output + '+';
+		}
+		
+		
+		System.out.println("Output : " +output);
+		
+		scanner.close();
+	}
+
+}

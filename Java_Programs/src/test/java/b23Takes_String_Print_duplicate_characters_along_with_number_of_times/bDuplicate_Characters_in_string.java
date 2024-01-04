@@ -12,6 +12,8 @@ public class bDuplicate_Characters_in_string {
 		
 		String str = scan.nextLine();
 		
+		scan.close();
+		
 		char[] ch = str.toCharArray();
 		
 		System.out.print("Duplicate Characters in above string are: ");

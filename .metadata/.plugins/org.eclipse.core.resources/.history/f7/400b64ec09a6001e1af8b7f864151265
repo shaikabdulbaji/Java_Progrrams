@@ -1,0 +1,42 @@
+package Assignment_3;
+
+import java.util.Scanner;
+
+public class a6_Prime_number {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Please Enter the Number : ");		
+		int number = scanner.nextInt();
+		
+		boolean isPrime = true;
+		
+		if(number !=1 && number !=2) {
+			
+			int i = 2;
+			while(i<number) {
+				
+				if(number%i==0) {
+					
+					isPrime = false;
+					break;
+					
+				}
+				i++;
+			}
+			
+		}
+		else 
+			isPrime = false;
+		
+		if(isPrime)
+			System.out.println("Given number is Prime Number");
+		else
+			System.out.println("Given number is not a Prime Number");
+		
+		scanner.close();
+	}
+
+}

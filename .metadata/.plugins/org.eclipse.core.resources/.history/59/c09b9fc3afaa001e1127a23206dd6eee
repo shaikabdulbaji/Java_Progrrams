@@ -1,0 +1,8 @@
+package Assignment_8;
+
+public class Snippet {
+	public static void main(String[] args) {
+		text.lastIndexOf("\n")
+	}
+}
+

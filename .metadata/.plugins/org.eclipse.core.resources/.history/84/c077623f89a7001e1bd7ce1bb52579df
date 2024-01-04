@@ -1,0 +1,10 @@
+package Assignment_6;
+
+public class a1_Print_the_sum_of_the_elements_of_a_multidimensional_array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

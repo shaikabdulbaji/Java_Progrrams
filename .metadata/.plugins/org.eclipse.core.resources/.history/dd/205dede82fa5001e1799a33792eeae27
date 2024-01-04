@@ -1,0 +1,19 @@
+package Assignment_1;
+
+import java.util.Scanner;
+
+public class a2_Student_result_based_on_the_grading_system {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Please Enter the Marks : ");
+
+		int marks = scanner.nextInt();
+		
+		
+		scanner.close();
+	}
+
+}

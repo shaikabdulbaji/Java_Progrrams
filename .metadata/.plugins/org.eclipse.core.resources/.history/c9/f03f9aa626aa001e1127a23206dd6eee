@@ -1,0 +1,10 @@
+package Assignment_8;
+
+public class a1_find_the_number_of_lines_present_in_a_text_file {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

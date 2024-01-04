@@ -12,6 +12,8 @@ public class aString_to_charArray {
 		
 		String str = scan.nextLine();
 		
+		scan.close();
+		
 		char[] ch = str.toCharArray();
 		
 		for(char c : ch) {

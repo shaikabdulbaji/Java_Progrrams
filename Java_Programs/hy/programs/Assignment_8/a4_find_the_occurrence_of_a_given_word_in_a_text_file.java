@@ -1,0 +1,32 @@
+package Assignment_8;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+
+public class a4_find_the_occurrence_of_a_given_word_in_a_text_file {
+
+	public static void main(String[] args) throws Exception {
+
+			File file = new File("./Sample1.txt");
+			
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			
+			String line = new String();
+			String targetWord = "i";
+			int repCount = 0;
+			
+			while((line = br.readLine()) != null)
+			{
+				String[] words = line.split(" ");
+				for (String word : words) {
+					if(word.equalsIgnoreCase(targetWord))
+						repCount++;
+				}
+			}
+			br.close();
+			
+			System.out.println("Rep Count --> " +repCount);
+	}
+
+}
